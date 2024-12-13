@@ -4,5 +4,6 @@
 /public/
 /uploads/
 
-.env
+
 .DS_Store
+.env
