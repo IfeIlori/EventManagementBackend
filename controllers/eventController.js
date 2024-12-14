@@ -58,17 +58,17 @@ const cancelEvent = async (req, res) => {
 };
 
 const confirmRSVP = async (req, res) => {
-  let { event_id, user_id } = req.body;
-  console.log(`event_id: ${event_id} || user_id: ${user_id}`);
+  let { eventId, userId } = req.body;
+  console.log(`event_id: ${eventId} || user_id: ${userId}`);
 
-  if (!event_id || !user_id) {
+  if (!eventId || !userId) {
     console.log("Event ID and user ID are required");
     return res.status(400).json({ error: "Event ID and user ID are required" });
   }
 
   try {
     const event = await pool.query("SELECT * FROM events WHERE id = $1", [
-      event_id,
+      eventId,
     ]);
     if (event.rows[0].available_seats === 0) {
       return res.status(400).json({ error: "Event is already full" });
@@ -76,7 +76,7 @@ const confirmRSVP = async (req, res) => {
 
     const existingRsvp = await pool.query(
       "SELECT * FROM rsvps WHERE event_id = $1 AND user_id = $2",
-      [event_id, user_id]
+      [eventId, userId]
     );
     if (existingRsvp.rows.length > 0) {
       return res
@@ -85,12 +85,12 @@ const confirmRSVP = async (req, res) => {
     }
 
     await pool.query("INSERT INTO rsvps (event_id, user_id) VALUES ($1, $2)", [
-      event_id,
-      user_id,
+      eventId,
+      userId,
     ]);
     await pool.query(
       "UPDATE events SET available_seats = available_seats - 1 WHERE id = $1",
-      [event_id]
+      [eventId]
     );
     console.log("RSVP confirmed successfully");
     return res.status(200).json({ message: "RSVP confirmed successfully" });
