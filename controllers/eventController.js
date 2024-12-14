@@ -49,10 +49,12 @@ const fetchUserEvents = async (req, res) => {
 
 
 const cancelEvent = async (req, res) => {
+  console.log("req.params.eventId", req.params.eventId);
   try {
     await pool.query("DELETE FROM rsvps WHERE event_id = $1", [req.params.eventId]);
     res.json({ message: "Event cancelled successfully" });
   } catch (error) {
+    console.log("error", error);
     res.status(500).json({ message: "Error cancelling event" });
   }
 };
