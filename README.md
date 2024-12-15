@@ -20,7 +20,7 @@ EvenTix is a full-stack web application for managing campus events, allowing use
 ## 🛠 Screenshots
 
 ###Login Endpoint
-![Login Endpoint](/Backend_Images/LoginUserPostman.png)
+![Login Endpoint](./Backend_Images/LoginUserPostman.png)
 
 ###Signup Endpoint
 ![Signup Endpoint](./Backend_Images/RegisterUserPostman.png)
