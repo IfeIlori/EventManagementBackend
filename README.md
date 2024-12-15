@@ -6,7 +6,7 @@ EvenTix is a full-stack web application for managing campus events, allowing use
 1. Navigate to the frontend directory: https://eventix-two.vercel.app/
 
 ## 🔐 Login Details
-For testing the application, use the following credentials:
+For testing the application, use the following credentials as an Admin:
 - **Username:** janesmith@example.com
 - **Password:** securePass!@#
 
