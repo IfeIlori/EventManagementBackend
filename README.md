@@ -17,6 +17,40 @@ EvenTix is a full-stack web application for managing campus events, allowing use
   - Manage event capacity
   - Track registrations
 
+## 🛠 Screenshots
+
+###Login Endpoint
+![Login Endpoint](./Backend_Images/LoginUserPostman.png)
+
+###Signup Endpoint
+![Signup Endpoint](./Backend_Images/RegisterUserPostman.png)
+
+### Event Creation
+![Event Creation](./Backend_Images/CreateEvent1.png)
+![Event Creation](./Backend_Images/CreateEvent2.png)
+
+### Get Events Data
+![Get Events Data](./Backend_Images/GettingEventsPostman1.png)
+![Get Events Data](./Backend_Images/GettingEventsPostman2.png)
+![Get Events Data](./Backend_Images/GettingEventsPostman3.png)
+![Get Events Data](./Backend_Images/GettingEventsPostman4.png)
+
+### User Event
+![User Event](./Backend_Images/GettingUserEvents1.png)
+![User Event](./Backend_Images/GettingUserEvents2.png)
+
+### Fetching User Events
+![Fetching User Events](./Backend_Images/FetchUser1.png)
+![Fetching User Events](./Backend_Images/FetchUser2.png)
+![Fetching User Events](./Backend_Images/FetchUser3.png)
+
+### Cancel Event
+![Cancel Event](./Backend_Images/CancelEventPostman.png)
+
+### Confirm Rsvp
+![Confirm Rsvp](./Backend_Images/ConfirmRSVP.png)
+
+
 ## 🛠 Tech Stack
 
 ### Frontend
