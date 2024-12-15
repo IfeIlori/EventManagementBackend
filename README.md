@@ -2,6 +2,14 @@
 
 EvenTix is a full-stack web application for managing campus events, allowing users to browse, RSVP, and manage their event preferences. The system features both user and admin interfaces with real-time event management capabilities.
 
+### Deployment Link
+1. Navigate to the frontend directory: https://eventix-two.vercel.app/
+
+## 🔐 Login Details
+For testing the application, use the following credentials:
+- **Username:** janesmith@example.com
+- **Password:** securePass!@#
+
 ## 🚀 Features
 
 - User Authentication (Login/Signup)
